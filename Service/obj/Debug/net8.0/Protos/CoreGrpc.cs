@@ -13,7 +13,7 @@ namespace Service {
   /// </summary>
   public static partial class Core
   {
-    static readonly string __ServiceName = "greet.Core";
+    static readonly string __ServiceName = "core.Core";
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
@@ -49,17 +49,17 @@ namespace Service {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Service.CalculateRequest> __Marshaller_greet_CalculateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Service.CalculateRequest.Parser));
+    static readonly grpc::Marshaller<global::Service.CalculateRequest> __Marshaller_core_CalculateRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Service.CalculateRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Service.CalculateResponse> __Marshaller_greet_CalculateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Service.CalculateResponse.Parser));
+    static readonly grpc::Marshaller<global::Service.CalculateResponse> __Marshaller_core_CalculateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Service.CalculateResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Service.CalculateRequest, global::Service.CalculateResponse> __Method_Calculate = new grpc::Method<global::Service.CalculateRequest, global::Service.CalculateResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "Calculate",
-        __Marshaller_greet_CalculateRequest,
-        __Marshaller_greet_CalculateResponse);
+        __Marshaller_core_CalculateRequest,
+        __Marshaller_core_CalculateResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor

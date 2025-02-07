@@ -1,7 +1,7 @@
 package main
 
-import "fmt"
+import "Core/server"
 
 func main() {
-    fmt.Println("Hello, World!")
+    server.Init()
 }
