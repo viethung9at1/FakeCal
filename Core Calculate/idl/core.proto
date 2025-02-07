@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "./core";
+
+package core;
+
+service Core {
+  rpc Calculate (CalculateRequest) returns (CalculateResponse);
+}
+
+message CalculateRequest {
+  int64 userId = 1;
+  int32 x = 2;
+}
+
+message CalculateResponse {
+  int64 result = 1;
+}
